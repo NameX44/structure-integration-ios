@@ -1,0 +1,12 @@
+build
+xcuserdata
+/*.xcodeproj/project.xcworkspace
+Library
+/parts
+/Pods
+/.bundle
+/opt
+/bin
+/fastlane/report.xml
+*.xccheckout
+test_output
