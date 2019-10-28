@@ -7,9 +7,18 @@
 //
 
 import Foundation
-//import Structure
+import Structure
 
 // Need to import structure and use STMesh for example  in this class
-class TestViewController: UIViewController {
-//    var x: STMesh?
+public class TestViewController: UIViewController {
+    var x: STMesh?
+
+    public init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    public required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
 }

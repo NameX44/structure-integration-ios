@@ -7,15 +7,24 @@
 //
 
 import UIKit
+import StructureIntegrationKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    lazy var testVc: TestViewController = {
+        return TestViewController()
+    }()
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let mainWindow = UIWindow(frame: UIScreen.main.bounds)
+        mainWindow.makeKeyAndVisible()
+        mainWindow.rootViewController = testVc
+        self.window = mainWindow
         return true
     }
 
